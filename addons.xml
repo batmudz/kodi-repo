@@ -1,3 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+  <addon id="script.splash.cycler"
+         version="9.0.0"
+         name="Splash Cycler"
+         provider-name="Bigmoco">
+    <extension point="xbmc.service" library="default.py" start="startup"/>
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+  </addon>
+  <addon id="skin.auramod" version="3.0.7" name="AuraMOD" provider-name="skyfsza,inb4after,SerpentDrago">
+    <requires>
+      <import addon="xbmc.gui" version="5.17.0"/>
+      <import addon="script.skin.helper.service" version="1.1.24"/>
+      <import addon="script.skinshortcuts" version="1.0.20"/>
+      <import addon="script.image.resource.select" version="0.0.5"/>
+    </requires>
+    <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1">
+      <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">AuraMod zonder verplichte TMDb Helper</summary>
+      <description lang="en">AuraMod for addon streaming. TMDb Helper is optional: Play, Info and widgets use the addon listitem when it is not installed.</description>
+      <platform>all</platform>
+      <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <news>
+        v3.0.5 - TMDb Helper is optional. Play/Info work from the addon item. Widgets and search paths that call plugin.video.themoviedb.helper only load when that addon is installed. v3.0.6 - Home widgets default to 10 items. Skin Helper PVR thumbs and music art are no longer forced on. Home menu animation is shorter. v3.0.7 - Movie title clearlogos keep their aspect ratio.
+      </news>
+    </extension>
+  </addon>
 </addons>
