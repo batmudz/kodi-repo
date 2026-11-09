@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
   <addon id="script.splash.cycler"
-         version="9.1.0"
+         version="9.1.2"
          name="Splash Cycler"
          provider-name="Bigmoco">
     <extension point="xbmc.service" library="default.py" start="startup"/>
