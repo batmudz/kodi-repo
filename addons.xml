@@ -33,4 +33,19 @@
       </news>
     </extension>
   </addon>
+  <addon id="plugin.program.mootjuhswiz" name="Mootjuh's Wiz" version="3.9" provider-name="Group Effort">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">This Wizard is a tool for backup/restore and maintenance of Kodi builds. Forked from simplewizard.</summary>
+      <description lang="en_GB">Kodi Wizard</description>
+      <platform>all</platform>
+      <license>GPL-2.0-or-later</license>
+    </extension>
+  </addon>
 </addons>
