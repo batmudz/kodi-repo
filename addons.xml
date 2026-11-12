@@ -48,4 +48,21 @@
       <license>GPL-2.0-or-later</license>
     </extension>
   </addon>
+  <addon id="repository.batmudz" name="Batmudz Repository" version="1.0.2" provider-name="batmudz">
+    <requires>
+      <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Batmudz Repository">
+      <dir>
+        <info compressed="false">https://raw.githubusercontent.com/batmudz/kodi-repo/main/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/batmudz/kodi-repo/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/batmudz/kodi-repo/main/zips/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary>Eigen Kodi repository</summary>
+      <description>Repository voor losse addons.</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
 </addons>
