@@ -33,7 +33,7 @@
       </news>
     </extension>
   </addon>
-  <addon id="plugin.program.mootjuhswiz" name="Mootjuh's Wiz" version="3.9.2" provider-name="Group Effort">
+  <addon id="plugin.program.mootjuhswiz" name="Mootjuh's Wiz" version="3.9.3" provider-name="Group Effort">
     <requires>
       <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -48,7 +48,7 @@
       <license>GPL-2.0-or-later</license>
     </extension>
   </addon>
-  <addon id="repository.batmudz" name="Batmudz Repository" version="1.0.2" provider-name="batmudz">
+  <addon id="repository.batmudz" name="Batmudz Repository" version="1.0.3" provider-name="batmudz">
     <requires>
       <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -62,6 +62,19 @@
     <extension point="xbmc.addon.metadata">
       <summary>Eigen Kodi repository</summary>
       <description>Repository voor losse addons.</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="plugin.program.shortcutmanager" name="Shortcut Manager" version="9.1.2" provider-name="Bob">
+    <requires>
+      <import addon="script.module.pil"/>
+      <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary>Shortcut Manager</summary>
       <platform>all</platform>
     </extension>
   </addon>
