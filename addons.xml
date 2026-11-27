@@ -78,4 +78,56 @@
       <platform>all</platform>
     </extension>
   </addon>
+<addon id="skin.nimbus" version="0.2.12" name="Nimbus Plus"
+	provider-name="adamsbuilds, Ivar Brandt">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.nimbus.helper" version="0.1.01"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>GPL-2.0-only, CC-BY-SA-4.0</license>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+		</assets>
+		<summary lang="en_GB">Nimbus Plus skin by adamsbuilds</summary>
+		<summary lang="en_NZ">Nimbus Plus skin by adamsbuilds</summary>
+		<summary lang="en_US">Nimbus Plus skin by adamsbuilds</summary>
+		<description lang="en_GB">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+		<description lang="en_NZ">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+		<description lang="en_US">Nimbus Plus Skin by adamsbuilds, a fork of the Nimbus skin by Ivar Brandt.</description>
+	</extension>
+</addon>
+<addon id="repository.batmudz.drop" name="batmudz Kodi" version="1.0.0" provider-name="batmudz">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="batmudz Kodi">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/batmudz/kodi-repo/main/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/batmudz/kodi-repo/main/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/batmudz/kodi-repo/main/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">batmudz Kodi</summary>
+    <description lang="en_GB">Persoonlijke Kodi-bron. Zips en addons.xml staan op GitHub.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
 </addons>
